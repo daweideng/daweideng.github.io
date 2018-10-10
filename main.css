@@ -1,0 +1,199 @@
+/*
+    main.css
+
+    grey:       #444444;
+
+    
+*/
+
+/*  --------------------------
+    General Styles
+    -------------------------- */
+html{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #343a40!important;
+    background-color: white;
+}
+
+#hero{
+    color: white;
+    //background: url(img/hero_s.png) no-repeat top;
+    //background-size: cover;
+    //background-position: 80% 50%;
+    //background-attachment: fixed;
+}
+.parallax-window {
+    //min-height: 600px;
+    background: transparent;
+}
+#heroT{
+    font-size: 90px;
+}
+#space1{
+    height: 236px;
+}
+
+.navbar {
+    width: 100%;
+    //background-color: none !important;
+}
+.bg-dark{
+    transition:750ms ease;
+    background-color: #1A237E;
+}
+.bg-light{
+    transition:750ms ease;
+    background: transparent !important;
+}
+.bg-light.scrolled{
+    background: #343a40!important;
+    color:white;
+}
+.navbar-toggler{
+    //cursor: pointer;
+    outline: none;
+}
+.navbar-link{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+#bnav .navbar{
+    background-color: #343a40;
+    color: white;
+}
+#bottom_nav .nav-item{
+    padding: 0 2rem;
+}
+
+
+#me1{
+    background-color: #1A237E;
+    color: white;
+
+}
+
+#me1 h1{
+    font-size: 90px;
+}
+
+#me2{
+    background-color: #C5CAE9;
+}
+#me h5, #me h6, #me p{
+    color: darkgray;
+}
+#me .card{
+    color: #343a40!important;
+}
+
+#me i{
+    font-size: 30px;
+    color: #1A237E;
+}
+#contact{
+    background-color: #1A237E;
+    color: white;
+    //background-image: linear-gradient(#1A237E, #1a237e);
+}
+
+#footerinfo i{
+    color:#1A237E;
+    font-size: 25px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+    
+
+
+/*  --------------------------
+    Responsive
+    -------------------------- */
+
+@media (max-width: 576px) { 
+    #heroT{
+        font-size: 15vw;
+    }
+    
+    .fixed-top{
+        position: relative;
+    }
+    #space1{
+        display: none;
+    }
+    #me i{
+    font-size: 20px;
+}
+    #me1 h1{
+    font-size: 12vw;
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+    #heroT{
+        font-size: 10vw;
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    #main_nav{
+          font-weight: normal;  
+    }
+        
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

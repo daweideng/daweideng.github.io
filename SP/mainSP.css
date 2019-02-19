@@ -1,0 +1,138 @@
+/*
+    main.css
+
+    grey:       #444444;
+
+    
+*/
+
+/*  --------------------------
+    General Styles
+    -------------------------- */
+html{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #343a40!important;
+    background-color: white;
+}
+#companyname{
+    font-size: 30px;
+    font-family: 'Viga', sans-serif;
+    color: #26A69A;
+}
+.parallax-window {
+    background: transparent;
+}
+
+
+.navbar-toggler{
+    //cursor: pointer;
+    outline: none;
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+
+#bottom_nav .nav-item{
+    padding: 0 2rem;
+}
+#space1{
+    height: 1000px;
+    background-color: #E0F2F1;
+}
+#footerinfo i{
+    color:#1A237E;
+    font-size: 25px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+    
+
+
+/*  --------------------------
+    Responsive
+    -------------------------- */
+
+@media (max-width: 576px) {
+    .fixed-top{
+        position: relative;
+    }
+
+    #companyname{
+        font-size: 24px;
+    }
+
+    #bottom_nav .nav-item{
+        //width: 50px;
+        padding: 0 1rem;
+        
+    }
+
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    #main_nav{
+          font-weight: normal;  
+    }
+        
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

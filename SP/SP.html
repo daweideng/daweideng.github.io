@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>SCARAMANGA PHUKET</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link href="mainSP.css" rel="stylesheet">
+        <link href="/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+        
+
+    </head>
+    
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        
+        <div id="hero" class="container-fluid">
+
+           <!-- Header Nav -->
+            <div class="container-fluid">
+             
+               <div class="row">
+                    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-white " id="topnav">
+                        
+                        <!--LOGO-->
+                        <a class="navbar-brand" href="#">
+                        <img src="Imgs/lionicon-small.png" alt="logo" style="width:40px;">
+                        </a>
+                        <span class="name pull-left" id="companyname">SCARAMANGA PHUKET</span>
+                        
+                        <!-- Nav button for mobile 
+                             * d-none: invisible
+                        -->
+                        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#main_nav_menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- *justify-content-end: right side -->
+                        <div class="collapse navbar-collapse justify-content-end" id="main_nav_menu">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#insta">Rooms</a></li>
+                                
+                                <li class="nav-item"><a class="nav-link" href="#insta">What to do</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>           
+                </div>
+                
+                <!--
+                <div class="row hero-content" id="space1">
+                </div>
+                
+                <div class="row hero-content py-lg-5 py-sm-5 py-5 col-md-6 col-sm-12">
+                    
+                        <h1 class="text-uppercase text-md-left " id="heroT">Welcome!</h1>
+                        
+                        <hr/>
+                        
+                        <h1 class="text-uppercase text-md-left">你好！Herzlich Willkommen!</h1>
+                        
+                        <br>
+                    
+                    <a href="#contact" class="btn btn-info btn-outline-light nav-link" role="button">Contact me</a>
+                        
+                        
+                        
+                    
+                </div>
+                <div class="row hero-content" id="space1">
+                </div>
+                -->
+                
+            </div>
+            
+                        
+            <!-- Bottom Nav, only in mobile -->
+            <div class="container">
+                <div class="row" id="bnav">
+                    
+                <div class="navbar fixed-bottom d-sm-none bg-dark navbar-light bg-white" id="bottom_nav">
+                    <ul class="navbar-nav flex-row  mx-auto" id="navlist">
+                
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="#insta">Rooms</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="#insta">ToDo</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="space1" class="container-fluid">
+        
+        </div>
+        
+        
+        
+        <!-- contact session
+        <div class="container my-lg-5 my-sm-3 py-4" id="contact">
+            
+            <!-- Session Tittle 
+            <h2 class="text-center pb-lg-3 pb-sm-5 pb-3 ">Contact</h2>
+            
+            
+            <div class="col text-center">
+                <h5> Drop me a message and I will get back to you as soon as possible!</h5>
+                
+            </div>
+             
+            <div class="col text-center pb-lg-4 pb-sm-3 pb-2">
+                <P><i class="fas fa-map-marker"></i> Munich, Germany</P>
+            </div>
+                
+            <!-- the contact form 
+            <form method="POST" action="https://formspree.io/david.deng.aus@gmail.com">
+                        
+                <!-- first row includes name and email 
+                <div class="row px-lg-5 px-sm-3">
+
+                    <div class="form-group col-sm-6">
+                        <label for="inputName4">Name</label>
+                        <input type="name" class="form-control" placeholder="Your name" name="name" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" placeholder="Your email" name="_replyto" required>
+                    </div>
+                    
+                    <div class="form-group col">
+                        <label for="exampleFormControlTextarea1">Your messages</label>
+                        <textarea class="form-control" rows="3" placeholder="Your message is..." name="message" required></textarea>
+                    </div>
+                    
+                    <div class="col-sm-12 form-group">
+                          <button class="btn btn-danger pull-right" type="submit" name="submit" value="sent">Send</button>
+                        </div>
+
+                </div>
+                
+
+            </form>   
+            
+            </div>
+        
+        
+        <!-- footer -->
+        <footer class="container-fluid py-lg-3 pt-3 pb-5 text-center" id="footerinfo">
+            
+            
+            <div class="row justify-content-center">
+                <a href="https://www.linkedin.com/in/daweideng/" title="LinkedIn link"><i class="fab fa-linkedin px-5 py-3"></i></a>
+                <a href="https://www.instagram.com/cnalex/" title="insta link"><i class="fab fa-instagram px-5 py-3 nav-link"></i></a>
+            </div>
+            
+            <p class="d-block mb-3 text-muted">&copy; Copyright 2018 Scaramanga Phuket</p>
+            
+
+        </footer>
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+        <script src="iconic.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/parallax.js-1.5.0/parallax.min.js"></script>
+        
+        <!--
+        <script>
+            $(function() {
+                
+                $(window).scroll(function() {    
+                    var scroll = $(window).scrollTop();
+
+                    if (scroll >= 200) {
+                        $('#topnav').removeClass('bg-light').addClass('bg-dark');
+                    } else {
+                        $('#topnav').removeClass('bg-dark').addClass('bg-light');
+                    }
+                });
+            });
+        
+        </script>
+        -->
+     
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links in navbar + footer link
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+
+              $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                  var pos = $(this).offset().top;
+
+                  var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                      $(this).addClass("slide");
+                    }
+                });
+              });
+            })
+        </script>
+        
+        
+    </body>
+
+    
+</html>
+
